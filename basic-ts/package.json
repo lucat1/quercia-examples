@@ -4,7 +4,6 @@
   "description": "A bascic quercia application example written in typescript",
   "license": "MIT",
   "author": "Yourself",
-  "main": "index.js",
   "scripts": {
     "build": "quercia build -m=production",
     "dev": "quercia watch",
