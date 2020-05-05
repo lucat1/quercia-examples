@@ -1,0 +1,22 @@
+{
+  "name": "quercia-basic",
+  "version": "0.0.1",
+  "description": "A bascic quercia application example",
+  "license": "MIT",
+  "author": "Yourself",
+  "main": "index.js",
+  "scripts": {
+    "build": "quercia build -m=production",
+    "dev": "quercia watch",
+    "mock": "qmock",
+    "stats": "quercia build -m=production -s"
+  },
+  "dependencies": {
+    "@quercia/cli": "^0.4.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@quercia/mock": "^0.0.2"
+  }
+}

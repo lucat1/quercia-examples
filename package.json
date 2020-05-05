@@ -1,0 +1,39 @@
+{
+  "name": "quercia-examples",
+  "description": "A set of starter examples of quercia applications",
+  "version": "0.0.0",
+  "scripts": {
+    "pretty": "prettier --write *.json */*.{ts,json} @quercia/**/*.{ts,json} @quercia/**/**/*.{ts,json}"
+  },
+  "main": "index.js",
+  "author": "lucat1 <fromzeroluke1@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "basic",
+    "basic-ts",
+    "with-preact"
+  ],
+  "husky": {
+    "hooks": {
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true",
+      "pre-commit": "pretty-quick --pattern '*.json */*.{ts,json} @quercia/**/*.{ts,json} @quercia/**/**/*.{ts,json}' --staged"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": false,
+    "singleQuote": true,
+    "jsxSingleQuote": true,
+    "arrowParens": "avoid",
+    "trailingComma": "none",
+    "proseWrap": "always",
+    "quoteProps": "consistent"
+  },
+  "dependencies": {
+    "husky": "^4.2.5",
+    "prettier": "^2.0.5",
+    "prettier-plugin-package": "^1.0.0",
+    "pretty-quick": "^2.0.1"
+  }
+}
