@@ -1,0 +1,22 @@
+{
+  "name": "quercia-with-preact",
+  "version": "0.0.1",
+  "description": "A bascic quercia application example using preact for production builds",
+  "license": "MIT",
+  "author": "Yourself",
+  "scripts": {
+    "build": "quercia build -m=production",
+    "dev": "quercia watch",
+    "mock": "qmock",
+    "stats": "quercia build -m=production -s"
+  },
+  "dependencies": {
+    "@quercia/cli": "^0.4.0",
+    "preact": "^10.4.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@quercia/mock": "^0.0.2"
+  }
+}
