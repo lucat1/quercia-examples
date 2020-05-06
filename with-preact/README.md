@@ -28,4 +28,4 @@ before any deployment because it could cause issues(when using internal and
 unsupported react-specific api). You can also inspect the bundle size and
 imports of each chunk of your application via the `stats` command, uploading the
 `stats.json` file on websites like chrisbateman's
-[webpack analyzer](https://chrisbateman.github.io/webpack-visualizer/)
+[webpack visualizer](https://chrisbateman.github.io/webpack-visualizer/)
